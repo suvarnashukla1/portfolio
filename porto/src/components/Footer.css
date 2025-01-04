@@ -1,0 +1,128 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Contact Box Styling */
+.contact-box {
+  border-radius: 10px;
+  border: 2px solid rgb(115, 15, 141);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+/* Heading Styling */
+.contact-heading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f1e9e9;
+}
+
+/* Description Styling */
+.contact-description {
+  font-size: 1rem;
+  color: #f7ecec;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4a047c;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #4a047c;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4a047c;
+  background-color: #e984e9;
+}
+
+.submit-button {
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4a047c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4a047c;
+}
+
+/* Additional Contact Info */
+.additional-info {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.additional-info a {
+  color: #c18ae7;
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-box {
+    width: 80%;
+    margin-left: 16%;
+  }
+  .contact-heading {
+    font-size: 1rem;
+  }
+  .contact-description {
+    font-size: 0.5rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.5rem;
+  }
+  .submit-button {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+  .additional-info {
+    margin-top: 20px;
+    font-size: 0.6rem;
+    color: #666;
+  }
+}
+@media (max-width: 1025px){
+  .contact-box {
+    width: 100%;
+    margin-left: 20%;
+  }
+}
+

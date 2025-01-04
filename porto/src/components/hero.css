@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100vh;
+}
+
+.text-content {
+  flex: 1; 
+  margin-right: 20px;
+  margin-bottom: 150px;
+}
+
+.text-content h1 {
+  font-size: 54px;
+  color: #ffecec;
+  background: linear-gradient(to right, #ff6a00, #ee0777); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #cfc0c0;
+  line-height: 1.9;
+}
+
+.photo-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 400px; 
+  height: 400px; 
+  border-radius: 400px; 
+  object-fit: cover; 
+  border: 3px solid #ada7a7;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 780px) {
+  .text-content {
+      margin-top: 30px;
+  }
+
+  .text-content h1 {
+      display: none; 
+  }
+
+  .text-content p {
+      font-size: 15px;
+      background: linear-gradient(to right, #ff6a00, #ee0777); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+  }
+
+  .profile-photo {
+      width: 250px; 
+      height: 250px; 
+  }
+}
+
+@media (max-width: 515px) {
+  .profile-container{
+  display: flex;
+  flex-direction:column;
+  } 
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+.text-content h1 {
+  font-size: 3.5rem;
+  width: 100%; 
+  overflow: hidden;
+  border-right: 0.15em solid #c40e9c;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 2.5s steps(40, end) 1 normal forwards, 
+             blink-caret 0.75s step-end infinite;
+}
+
+.text-content h1::after {
+  content: '';
+  animation: none;
+}
+
+@keyframes move-up-down {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-29px); } 
+  100% { transform: translateY(0); }   
+}
+
+.profile-photo {
+  animation: move-up-down 2s ease-in-out infinite; 
+}
+
+@media (max-width: 380px){
+  .profile-photo
+  {
+    height: 50%;   /* Adjust to the desired height */
+  width: 80%;    /* Adjust to the desired width */
+  border-radius: 50%;  /* Makes the image circular */
+  object-fit: cover;
+ 
+  }
+  .skills-heading{
+    margin-top:50%;
+  }
+}
+

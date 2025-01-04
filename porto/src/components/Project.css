@@ -1,0 +1,57 @@
+.project-container {
+  max-width: 900px; 
+  margin:auto;
+}
+.pro {
+  border: 2px solid var(--border-color);
+  text-align: center;
+  margin: 10px; 
+  color: white;
+  height: 500px;
+}
+
+.reve{
+  font-size: 0.8rem;
+  padding:8px;
+}
+.ph {
+  font-size: 3.5rem;
+
+  text-align: center;
+  color:white;
+  font-weight:1000;
+}
+
+:root {
+  --border-color: #4a047c;
+}
+.view {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: var(--border-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.headi{
+  font-size: 1.5rem;
+ 
+}
+.imi{
+  width:160px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+@media(max-width:768px){
+ .imi{
+  margin-left:110px;
+ }
+}
+@media(max-width:323px){
+  .imi{
+   margin-left:70px;
+  }
+ }
+
