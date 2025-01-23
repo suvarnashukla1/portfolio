@@ -1,5 +1,6 @@
-import React from 'react';
+import React,{userEffect, useState} from 'react';
 import './Skills.css'; 
+
 
 const Skills = () => {
 

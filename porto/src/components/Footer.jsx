@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import './Footer.css';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
   });
 
   const [responseMessage, setResponseMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false); 
+  const formRef = useRef(null); // Ref for the form
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,10 +18,6 @@ const Footer = () => {
 
   const submitData = async (e) => {
     e.preventDefault();
-    
-    if (isSubmitting) return;
-    setIsSubmitting(true); 
-
     const { name, email, message } = formData;
 
     try {
@@ -36,7 +32,7 @@ const Footer = () => {
           name,
           email,
           message,
-          timestamp,  
+          timestamp,
         }),
       });
 
@@ -53,14 +49,33 @@ const Footer = () => {
       }
     } catch (error) {
       setResponseMessage(`An error occurred: ${error.message}`);
-    } finally {
-      setIsSubmitting(false); 
     }
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible'); // Add the 'visible' class when the form is in view
+            observer.unobserve(entry.target); // Stop observing once it's visible
+          }
+        });
+      },
+      { threshold: 0.3 } // Trigger when 10% of the element is visible
+    );
+
+    if (formRef.current) {
+      observer.observe(formRef.current); // Observe the form container
+    }
+
+    // Cleanup the observer
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="contact-page">
-      <div className="contact-box">
+      <div ref={formRef} className="contact-box hidden"> {/* Initial state as 'hidden' */}
         <h1 className="contact-heading">Contact Me</h1>
         <p className="contact-description">
           I'd love to hear from you! Please fill out the form below or reach out directly through email or LinkedIn.
@@ -68,7 +83,7 @@ const Footer = () => {
 
         <form className="contact-form" onSubmit={submitData}>
           <input
-         type="text"
+            type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -91,12 +106,8 @@ const Footer = () => {
             rows="5"
             required
           />
-          <button 
-            type="submit" 
-            className="submit-button" 
-            disabled={isSubmitting} 
-          >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+          <button type="submit" className="submit-button">
+            Send Message
           </button>
         </form>
 

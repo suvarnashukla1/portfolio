@@ -12,7 +12,7 @@ const Hero = () => {
       
     </div>
     <div className="photo-content">
-      <img src="imgs/code.png" alt="Full Stack Developer" className="profile-photo" />
+      <img src="imgs/kitty.gif" alt="Full Stack Developer" className="profile-photo" />
     </div>
   </div>
   )
