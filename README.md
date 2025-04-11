@@ -8,8 +8,7 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 - 🎨 **CSS Animations**: Smooth transitions and interactive effects
 - 📬 **Firebase Integration**: Real-time message submission via contact form
 - 📱 **Responsive Design**: Optimized for mobile, tablet, and desktop
-- ☁️ **Firebase Hosting (optional)** for fast and secure deployment
-- 🔐 Spam-safe contact form with client-side validation (optional)
+- ☁️ **Firebase Hosting** for fast and secure deployment
 
 <!-- Replace with your actual screenshot or demo GIF -->
 
