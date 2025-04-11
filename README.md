@@ -23,5 +23,4 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 | Firebase     | Message storage & hosting      |
 | JavaScript   | Logic and interactivity        |
 
-## 🗂️ Project Structure
 
