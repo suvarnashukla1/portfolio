@@ -1,4 +1,4 @@
-# 🚀 Personal Portfolio Website
+#  Personal Portfolio Website
 
 A sleek, responsive, and animated personal portfolio built with **ReactJS** and **pure CSS**, featuring **CSS animations** and **Firebase integration** for real-time message handling. Designed to showcase your skills, projects, and personality — all in one place.
 
