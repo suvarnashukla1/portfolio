@@ -2,7 +2,7 @@
 
 A sleek, responsive, and animated personal portfolio built with **ReactJS** and **pure CSS**, featuring **CSS animations** and **Firebase integration** for real-time message handling. Designed to showcase your skills, projects, and personality — all in one place.
 
-## 🌟 Features
+##  Features
 
 - ⚛️ **ReactJS**: Component-based, modular structure
 - 🎨 **CSS Animations**: Smooth transitions and interactive effects
