@@ -10,7 +10,6 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 - 📱 **Responsive Design**: Optimized for mobile, tablet, and desktop
 - ☁️ **Firebase Hosting** for fast and secure deployment
 
-<!-- Replace with your actual screenshot or demo GIF -->
 
 
 ## 🔧 Tech Stack
