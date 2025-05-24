@@ -21,4 +21,14 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 | Firebase     | Message storage & hosting      |
 | JavaScript   | Logic and interactivity        |
 
+# 1. Clone the repository
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+
 
