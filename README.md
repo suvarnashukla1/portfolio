@@ -28,7 +28,8 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 1. **Install dependencies**
    ```bash
    npm install
-npm run dev
+  ```bash
+   npm run dev
 
 
 
