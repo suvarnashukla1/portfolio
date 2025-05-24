@@ -23,10 +23,12 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 
 
 
-#  Install dependencies
-npm install
+### 📦 Installation & Setup
 
-#  Start the development server
+1. **Install dependencies**
+   ```bash
+   npm install
 npm run dev
+
 
 
