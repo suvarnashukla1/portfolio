@@ -26,7 +26,7 @@ A sleek, responsive, and animated personal portfolio built with **ReactJS** and 
 #  Install dependencies
 npm install
 
-# 3. Start the development server
+#  Start the development server
 npm run dev
 
 
